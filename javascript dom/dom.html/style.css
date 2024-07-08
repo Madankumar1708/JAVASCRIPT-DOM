@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font:italic;
+    font-size: xx-large;
+    
+#container{
+    text-align: center;
+    justify-content: center;
+
+    padding: 20px;
+    border-radius: 5PX;
+    position: relative;
+
+
+}
+input{
+    padding: 10px;
+    margin: 30px;
+    display: flexbox;
+    justify-content: center;
+    border-radius: 5PX;
+    text-align: right;
+    
+}
+button{
+    background-color: aquamarine;
+    width: 200px;
+    height: 30px;
+}

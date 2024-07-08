@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<link rel="stylesheet" href="../dom.html/style.css">
+<body>
+    <div id="container">
+   <center>
+    <h1>STUDENT FORM</h1>
+   <form>
+    <table border="2">
+        <tr>
+            <td>NAME :<input type="text"></td><BR>
+        </tr>
+        <tr>
+            <td>AGE :<input type="number"></td><BR>
+        </tr>
+        <tr>
+            <td>GENDER :<input type="radio" name="GENDER">MALE <input type="radio" name="GENDER">FEMALE
+        </tr>
+        <tr>
+            <td>COURSE : 
+                <select>
+                    <option>PYTHON</option>
+                    <option>JAVA</option>
+                    <option>C</option>
+                    <option>C++</option>
+                </select>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>EMAIL: <input type="text"></td>
+        </tr>
+    
+</center>
+    </div>
+</table>
+</form>
+<div id="two">
+    <button onclick="deleteitem(event)">save</button>
+
+</div>
+</body>
+</html>
+<script>
+    var div = document.getElementById("container")
+    function add()
+     {
+        var listitem = document.createElement("li")
+        listitem.textContent=input.value + "<button onclick='deleteitem(event)'>delete</button>"
+        div.append(listitem)
+        
+    }
+    function deleteitem(event)
+    {
+        event.target.parentelement.remove
+    }
+
+</script>
